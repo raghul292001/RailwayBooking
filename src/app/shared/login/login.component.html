@@ -1,0 +1,25 @@
+<body>
+  <p-toast></p-toast>
+    <div class="login-container">
+      <div class="login-header">
+        <h2>Login</h2>
+      </div>
+      <div class="login-form">
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="username">Phone:</label>
+            <input type="text" [(ngModel)]="loginObj.phone"  name="phone">
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" [(ngModel)]="loginObj.password" name="password">
+          </div>
+          <div class="signup-link">Not a member? <a routerLink="/register
+            ">Signup now</a></div>
+          <div class="form-group">
+            <button (click)="isUserLoggedIn()" type="submit">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+</body>
